@@ -1,0 +1,214 @@
+:root {
+  /* Primary */
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+
+  /* Neutral */
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+
+  /* Font */
+  --font: "League Spartan", sans-serif;
+}
+
+/** Reset **/
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: var(--font);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  /* overflow: hidden; */
+}
+
+h1 {
+  margin: 0;
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h1,
+h2 {
+  color: var(--Very-Dark-Magenta);
+}
+
+/** Social **/
+.social-container {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.social-details {
+  padding: 1.5rem;
+}
+
+.social-desc > p {
+  color: var(--Dark-Grayish-Magenta);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2rem;
+  margin: 0;
+  margin-top: 2.2rem;
+}
+
+.social-rated h2 {
+  font-size: 1rem;
+}
+
+.social-rated-desc {
+  margin-top: 2.8rem;
+}
+
+.social-cards {
+  margin: 1.2rem auto 0;
+}
+
+.social-card {
+  width: 350px;
+  background-color: var(--Very-Dark-Magenta);
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  padding: 2.5rem 2rem 2rem;
+}
+
+.social-card-person {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.social-card-person img {
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+}
+
+.social-card-person h3 {
+  margin: 0;
+  margin-bottom: 0.3rem;
+  font-size: 1.05rem;
+}
+
+.social-card-person h3,
+.social-card p {
+  color: var(--White);
+}
+
+.social-card-person span {
+  color: var(--Soft-Pink);
+}
+
+.social-card p {
+  margin: 0;
+  margin-top: 2rem;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+  text-align: start;
+  font-weight: 500;
+}
+
+.attribution {
+  margin: 1rem 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/** MediaQueries **/
+
+@media screen and (min-width: 1240px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0 auto;
+  }
+
+  .social-container {
+    width: 1200px;
+  }
+
+  .social-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .social-desc {
+    text-align: start;
+    width: 375px;
+    padding-right: 1.5rem;
+  }
+
+  .social-desc > h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .social-desc p {
+    margin-top: 2rem;
+  }
+
+  .social-rated {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5rem;
+  }
+
+  .social-rated-desc {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .social-rated-desc:first-of-type {
+    margin-left: 3rem;
+  }
+
+  .social-rated-desc:nth-of-type(2) {
+    align-self: center;
+  }
+
+  .social-rated-desc:last-of-type {
+    align-self: flex-end;
+    margin-right: 4.5rem;
+  }
+
+  .social-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+  }
+
+  .social-card {
+    margin: 0;
+    width: 375px;
+    height: 243px;
+  }
+
+  .social-card:nth-of-type(2) {
+    margin-top: 1rem;
+  }
+
+  .social-card:last-of-type {
+    margin-top: 2rem;
+  }
+}
